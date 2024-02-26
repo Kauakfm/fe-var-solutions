@@ -1,0 +1,818 @@
+a, button{
+  color: var(--primary-text-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.body-home h1{
+  color: var(--primary-color-3);
+  border: 4px solid var(--primary-color-3);
+  font-size: var(--h1-font-size);
+  padding: 5px 22px;
+  margin: 0 0 3% 0;
+  transition: 0.3s ease;
+}
+.body-home h1:hover{
+  box-shadow: 0px 0px 20px var(--primary-color-3);
+}
+
+.body-home h2{
+  font-size: var(--h2-font-size);
+  font-weight: 700;
+  text-align: center;
+}
+
+.body-home h3{
+  font-size: var(--h3-font-size);
+}
+
+p{
+  font-size: var(--p-font-size);
+  font-weight: 500;
+}
+
+h6{
+  font-size: var(--h6-font-size); 
+}
+
+.imagem-body{
+    background: url(../../imagens/var/fundo.jpg);
+    background-attachment: fixed;
+}
+.body-home{
+    height: 100%;
+    color: var(--primary-text-color);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.video-home, #quem-somos, #nosso-proposito, #como-funciona, 
+#nossa-trilha, #nossa-historia, #cases-de-sucesso, #parceiros{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: var(--tertiary-color);
+    height: 100%;
+}
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-out;
+}
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+.icon-up{
+    font-size: 39px;
+    padding: 7px;
+    background-color: var(--primary-color-1);
+    border-radius: 5px;
+    transition: 0.3s ease-out;
+    color: var(--tertiary-color);
+}
+.icon-up:hover{
+    background-color: var(--primary-color-2);
+    transform: scale(1.05);
+}
+
+
+.video-home{
+    padding-top: 2vh;
+    height: 120vh;
+    background-color: var(--primary-color-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.video-home iframe{
+    width: 950px;
+    height: 535px;
+    margin: 7vh 0 65px 0;
+    border-radius: 10px;
+}
+.video-home a{
+    margin-bottom: 4vh;
+}
+.video-home button{
+    background-color: var(--secondary-color);
+    color: var(--primary-text-color);
+    border: none;
+    padding: 1vh 3vw;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    box-shadow: 1px 1px 10px var(--tertiary-color);
+    transition: 0.4s ease-in-out;
+}
+
+
+#quem-somos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8% 0 4% 0;
+    color: white;
+}
+#quem-somos h2{
+    width: 80%;
+}
+#quem-somos h1{
+    margin-top: 3%;
+}
+#quem-somos h3{
+    width: 60%;
+    text-align: justify;
+}
+
+
+#nosso-proposito{
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8% 7% 5% 5%;
+    color: var(--primary-text-color);
+}
+#nosso-proposito .codeString{
+    width: 50%;
+    font-size: var(--h2-font-size);
+    font-family: 'Fira Code';
+    font-weight: 700;
+    transition: 0.3s ease;
+    color: var(--primary-text-color);
+}
+#nosso-proposito .codeString:hover{
+    text-shadow: 0px 0px 15px var(--tertiary-color);
+}
+#nosso-proposito .codeString span{
+    padding-left: 3%;
+}
+#nosso-proposito div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+#nosso-proposito div h3{
+    text-align: justify;
+    margin-top: 4%;
+}
+
+
+/* #como-funciona{
+    background-color: var(--cor-extra-clara);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8% 0 6% 0;
+} */
+
+
+#nossa-trilha{
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8% 4% 0 4%;
+}
+
+.trilha-cards{
+    display: flex;
+    margin-top: 2%;
+}
+.container{
+    height: 410px; 
+    width: 300px;
+    position: relative;
+    perspective: 1000px;
+}
+.container:hover .front{
+    transform: rotateY(-180deg);
+}
+.container:hover .back{
+    transform: rotateY(0deg);
+}
+.front,.back{
+    height: 74%; 
+    width: 85%;
+    position: absolute;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    border-radius: 10px;
+}
+.front{
+    transform: rotateY(0deg);
+    background-color: var(--primary-color-4); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+}
+.front h3{
+    font-size: var(--h2-font-size);
+}
+.front img{
+    width: 35%;
+    margin-top: 2%;
+}
+.back{
+    transform: rotateY(180deg);
+    background-color: var(--primary-color-3);
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+.back div{
+    display: flex;
+    align-items: center;
+}
+.back div p{
+    margin-top: 10%;
+    margin-left: 4%;
+    transition: 0.7s ease-in-out;
+}
+.back div .bootstrap{
+    width: 16%;
+    margin-left: 2%;
+}
+.back img{
+    width: 20%;
+}
+.back-ferramentas{
+    flex-wrap: wrap;
+}
+.back-ferramentas div{
+    width: 50%;
+}
+.back-ferramentas div img{
+    width: 27%;
+}
+
+
+#nossa-historia{
+    background-color: var(--primary-color-2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5% 4%;
+    color: var(--primary-text-color);
+}
+#nossa-historia h3{
+    width: 90%;
+    text-align: justify;
+    margin-top: 4%;
+}
+.historia-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.carossel-historia{
+    width: 40%;
+}
+.carousel-item img{
+    border-radius: 10px;
+    height: 44vh;
+}
+.carossel-historia-previous{
+    position: absolute;
+    margin-right: 180% !important;
+}
+.carossel-historia-next{
+    position: absolute;
+    margin-left: 180% !important;
+}
+
+
+#cases-de-sucesso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 4% 0 4% !important;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-text-color);
+}
+.carossel-cases{
+    width: 55%;
+    height: 65vh;
+    padding: 0 2%;
+}  
+.cases-card img{
+    width: 10vw;
+    height: auto !important;
+    border-radius: 50% !important;
+}
+.cases-card p{
+    text-align: justify;
+    color: var(--secondary-text-color) !important;
+}
+.cases-card h6{
+    color: var(--primary-color-2);
+    font-size: 30px !important;
+    font-weight: 600;
+}
+.cases-card div h6 p{
+    margin-top: 2%;
+    font-size: var(--h3-font-size);
+    font-weight: 600;
+    color: var(--secondary-text-color);
+}
+.cases-card div h6 h5{
+    font-size: var(--h6-font-size);
+    margin-top: -3%;
+}
+.cases-card div h6 a{
+    position: absolute;
+    font-size: var(--p-font-size);
+    transition: 0.7s ease-in-out;
+}
+.cases-card div h6 a:hover{
+    text-decoration: underline;
+}
+.cases-card-div{
+    display: flex;
+    align-items: center;
+    gap: 4%;
+    margin-bottom: 4%;
+}
+
+
+
+/* #parceiros{
+    display: flex;
+    background-color: var(--cor-extra-clara);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 4%;
+}
+#parceiros div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    gap: 8%;
+}
+#parceiros div a{
+    transition: 0.3s ease-in-out;
+}
+#parceiros div a:hover{
+    transform: scale(1.07);
+}
+#parceiros div a img{
+    width: 12vw;
+} */
+
+
+.footer{
+    padding: 5% 6% 3% 6%;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.footer h6{
+    font-size: var(--h3-font-size);
+    font-weight: 600;
+    color: var(--primary-color-3);
+}
+.footer p{
+    margin: 0;
+    color: var(--primary-text-color);
+}
+.footer-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-unidade{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer-unidade p:nth-child(2){
+    padding: 0;
+}
+.footer-unidade p:nth-child(3){
+    margin: 2% 0 12% 0;
+    padding: 0;
+}
+.footer-unidade div{
+    width: 100%;
+    display: flex;
+}
+.footer-unidade svg{
+    font-size: 35px;
+    margin-right: 0.6vw;
+    transition: 0.3s ease-in-out;
+    color: var(--primary-color-3);
+}
+.footer-unidade svg:hover{
+    transform: scale(1.12);
+}
+.footer-participar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-participar a{
+    margin-bottom: 4%;
+    font-size: var(--p-font-size);
+    transition: 0.5s ease-in-out;
+    text-align: center;
+    font-weight: 500;
+}
+.footer-participar a:hover{
+    text-decoration: underline;
+}
+.map-container {
+    width: 30vw;
+    height: 40vh;
+}
+.footer span{
+    margin-top: 3%;
+    color: var(--primary-text-color);
+    font-weight: 600;
+    font-size: var(--h6-font-size);
+}
+
+
+
+/* celular */
+@media screen and (max-width: 767px){
+    :root {
+        --h1-font-size: 1.5rem; /* 24px titulos azuis*/
+        --h2-font-size: 1.4rem; /* 23px titulos*/
+    }
+    .body-home h1{
+        margin: 0 0 5% 0;
+        padding: 5px 20px;
+    }
+
+    .icon-up{
+        display: none;
+    }
+
+    .video-home{
+        height: 55vh;
+    }
+    .video-home iframe{
+        width: 355px;
+        height: 200px;
+        margin: 7vh 0 45px 0;
+    }
+    .video-home a{
+        margin-bottom: 0vh;
+    }
+    .video-home button{
+        padding: 0.8vh 6vw;
+        font-size: 1rem;
+    }
+    
+    #quem-somos{
+        padding: 10% 0;
+    }
+    #quem-somos h2{
+        width: 90%;
+        margin-bottom: 4%;
+        font-size: 1.1rem;
+    }
+    #quem-somos h1{
+        margin-top: 3%;
+        font-size: 1.2rem;
+    }
+    #quem-somos h3{
+        width: 80%;
+    }
+
+    #nosso-proposito{
+        flex-direction: column;
+        padding-bottom: 10%;
+    }
+    #nosso-proposito .codeString{
+        width: 100%;
+        font-size: var(--h3-font-size);
+        margin-top: 3%;
+    }
+    #nosso-proposito h1{
+        margin-top: 5%;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    #nosso-proposito div{
+        width: 90%;
+    }
+
+    #como-funciona h1{
+        font-size: 1.2rem;
+    }
+
+    #como-funciona img{
+        width: 90%;
+    }
+
+    #nossa-trilha{
+        padding-top: 10%;
+    }
+    #nossa-trilha h1{
+        font-size: 1.2rem;
+    }
+    .trilha-cards{
+        flex-wrap: wrap;
+        margin-left: 4%;
+    }
+    .container{
+        height: 340px; 
+        width: 270px;
+    }
+    .front,.back{
+        height: 90%; 
+    }
+    .back div p{
+        font-size: 0.9rem;
+    }
+        
+    #nossa-historia{
+        flex-direction: column;
+        padding: 5% 0 10% 0;
+    }
+    #nossa-historia h1{
+        margin-top: 5%;
+        font-size: 1.2rem;
+    }
+    #nossa-historia h3{
+        margin-bottom: 10%;
+    }
+    .historia-texto{
+        width: 90%;
+    }
+    .carossel-historia{
+        width: 80%;
+    }
+    .carousel-item img{
+        height: 20vh;
+    }
+    .carossel-historia-previous{
+        display: none;
+    }
+    .carossel-historia-next{
+        display: none;
+    }
+
+    #cases-de-sucesso{
+        padding: 10% 0 !important;
+    }
+    #cases-de-sucesso h1{
+        font-size: 1.2rem;
+    }
+    .carossel-cases{
+        width: 95%;
+        height: 100%;
+        margin-top: 5%;
+    }
+    .cases-card img{
+        width: 20vw;
+    }
+    .cases-card p{
+        text-align: start;
+        font-size: 0.9rem;
+        margin-top: 10%;
+    }
+    .cases-card h6{
+        font-size: 22px !important;
+        flex-direction: row;
+    }
+    #parceiros{
+        padding: 10% 0;
+    }
+    #parceiros h1{
+        text-align: center;
+        font-size: 1.2rem;
+        width: 65%;
+    }
+    #parceiros div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #parceiros div a img{
+        width: 20vw;
+    }
+    #parceiros div a:nth-child(1){
+        margin-bottom: 2vh;
+    }
+    #parceiros div a:nth-child(2){
+        margin-bottom: 2vh;
+    }
+    #parceiros div a:nth-child(3){
+        margin-bottom: 2vh;
+    }
+    
+    .footer{
+        padding-top: 11%;
+        padding-bottom: 7%;
+    }
+    .footer p{
+        text-align: center;
+    }
+    .footer-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-unidade{
+        align-items: center;
+    }
+    .footer-unidade div{
+        display: flex;
+        justify-content: center;
+        gap: 3%;
+        margin: -6% 0 10% 0;
+    }
+    .footer-unidade svg{
+        font-size: 37px;
+    }
+    .footer-participar{
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    .footer-participar a{
+        text-decoration: underline;
+    }
+    .map-container {
+        width: 80vw;
+        height: 30vh;
+    }
+    .footer span{
+        margin-top: 9%;
+        text-align: center;
+    }
+}
+
+
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1080px){
+    .links-header img{
+        width: 70px;
+        margin-left: 3vw;
+    }
+
+    .botoes-header button{
+        padding: 0.9vh 3vw;
+        height: auto;
+        margin-right: 1vw;
+        border-radius: 5px;
+    }
+
+    .icon-up{
+        display: none;
+    }
+
+    .video-home{
+        height: 55vh;
+    }
+    .video-home iframe{
+        width: 355px;
+        height: 200px;
+        margin: 7vh 0 45px 0;
+    }
+    .video-home a{
+        margin-bottom: 0vh;
+    }
+    .video-home button{
+        padding: 0.8vh 6vw;
+        font-size: 1rem;
+    }
+
+
+    #quem-somos h2{
+        width: 85%;
+    }
+    #quem-somos h3{
+        width: 85%;
+    }
+    #nosso-proposito{
+        flex-direction: column;
+    }
+    #nosso-proposito .codeString{
+        width: 80%;
+        margin-left: 5%;
+        margin-bottom: 8%;
+    }
+    #nosso-proposito div{
+        width: 90%;
+    }
+    #como-funciona img{
+        width: 90%;
+    }
+    .trilha-cards{
+        flex-wrap: wrap;
+    }
+    .container{
+        height: 390px; 
+        width: 310px;
+    }
+    .front,.back{
+        height: 90%; 
+    }
+    #nossa-historia{
+        flex-direction: column;
+    }
+    #nossa-historia h3{
+        margin-bottom: 7%;
+    }
+    .historia-texto{
+        width: 100%;
+    }   
+    .carossel-historia{
+        width: 70%;
+    }
+    .carousel-item img{
+        height: 28vh;
+    }
+    .carossel-historia-previous{
+        display: flex;
+    }
+    .carossel-historia-next{
+        display: flex;
+    }
+    .carossel-cases{
+        width: 80%;
+        height: 100%;
+        margin-top: 5%;
+    }  
+    .cases-card img{
+        width: 20vw;
+    }
+    .cases-card p{
+        margin-top: 5%;
+    }
+    #parceiros div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #parceiros div a img{
+        width: 20vw;
+    }
+    #parceiros div a:nth-child(1){
+        margin-bottom: 2vh;
+    }
+    #parceiros div a:nth-child(2){
+        margin-bottom: 2vh;
+    }
+    #parceiros div a:nth-child(3){
+        margin-bottom: 2vh;
+    }
+    .footer{
+        padding-bottom: 5%;
+    }
+    .footer p{
+        text-align: center;
+    }
+    .footer-div{
+        flex-wrap: wrap;
+    }
+    .footer-unidade{
+        align-items: center;
+        width: 50%;
+    }
+    .footer-unidade div{
+        display: flex;
+        justify-content: center;
+        gap: 3%;
+        margin: -6% 0 10% 0;
+    }
+    .footer-unidade svg{
+        font-size: 37px;
+    }
+    .footer-participar{
+        align-items: center;
+        margin-bottom: 5%;
+        width: 50%;
+    }
+    .footer-participar a{
+        text-decoration: underline;
+    }
+    .map-container {
+        margin-left: 10%;
+        margin-top: 5%;
+        width: 70vw;
+        height: 30vh;
+    }
+    .footer span{
+        margin-top: 6%;
+    }
+} 

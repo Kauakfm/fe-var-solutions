@@ -1,0 +1,209 @@
+.body-cadastro .logo-var{
+   margin-left: 7.7%;
+   width: 28%;
+}
+
+.container-cadastro{
+    margin-right: 3%;
+    margin-left: 15.5%;
+}
+/* .cadastro-icon{
+    background-color: var(--white-color);
+    padding: 12px;
+    width: 67px;
+    border-radius: 50%;
+    box-shadow: -2px 2px 20px var(--black-color);
+    position: absolute;
+    top: 11%;
+    right: 14%;
+    box-sizing: content-box;
+}
+.cadastro-icon svg{
+    font-size: 65px;
+    color: var(--4-gray-color);
+} */
+.container-cadastro p{
+    padding-right: 5%;
+}
+
+.aalala{
+    display: block;
+    position: absolute;
+    margin: auto;
+    margin-right: auto;
+}
+.aalala div{
+    display: block;    
+}
+
+
+
+
+.body-confirmacao{
+    background-color: var(--secondary-color);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--primary-text-color);
+    text-align: center;
+}
+.body-confirmacao div{
+    background-color: var(--primary-color-2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 28%;
+    height: 60%;
+    padding: 0 2%;
+    border: 1px solid var(--border-gray-color);
+    border-radius: 7px;
+}
+.body-confirmacao img{
+    width: 22%;
+    margin-bottom: 9%;
+    margin-top: 20%;
+}
+.body-confirmacao h1{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+.body-confirmacao button{
+    background-color: var(--green-color);
+    color: #fff;
+    border: none;
+    padding: 1.7% 10%;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 1px 1px 7px var(--tertiary-color);
+    transition: 0.4s ease-in-out;
+    margin-top: 5%;
+}
+.body-confirmacao button:hover{
+    background-color: var(--2-green-color);
+}
+.span-login{
+    display: flex;
+    justify-content: space-between !important;
+}
+.span-login p{
+    font-size: 0.8rem;
+    width: 60%;
+    padding-right: 0;
+    margin-top: 8px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+
+
+.modal-parabens .botao-cadastro{
+    width: 100%;
+    height: 63%;
+    margin-right: 40px;
+    color: var(--white-color);
+}
+
+.modal-parabens .modal-content{
+    border-radius: 30px;
+}
+
+.modal-parabens .modal-body{
+    background-color: var(--secondary-color) !important;
+    border-radius: 8px;
+    padding: 12% 7%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--primary-text-color);
+}
+
+.modal-parabens .modal-body img{
+    width: 15% !important;
+    margin-bottom: 5%;
+}
+
+.modal-parabens .modal-body h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.modal-parabens .modal-body h6{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.modal-parabens .modal-body p{
+    padding-top: 5%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.modal-parabens .modal-body p a{
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+
+
+/* celular e tablet */
+@media screen and (max-width: 1080px){
+    .container-cadastro {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    .body-cadastro .logo-var {
+        margin-left: -5%;
+    }
+    .cadastro-icon{
+        display: none;
+    }
+    /* .cadastro-icon{
+        padding: 12px;
+        width: 58px;
+        border-radius: 50%;
+        top: 22%;
+        right: 9%;
+    }
+    .cadastro-icon svg{
+        font-size: 58px;
+    } */
+    .body-confirmacao{
+        padding: 0 10%;
+        text-align: center;
+    }
+    .body-confirmacao button{
+        padding: 2% 5%;
+        font-size: 1rem;
+    }
+    .body-confirmacao div{
+        width: 100%;
+        height: 45%;
+    }
+    .body-confirmacao h1{
+        width: 75%;
+    }
+    .modal-parabens .modal-content{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .modal-parabens .modal-body h2{
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    .modal-parabens .modal-body h6{
+        text-align: center;
+    }
+    .body-cadastro .modal-parabens .modal-body img{
+        width: 25%;
+        margin-bottom: 5%;
+    }
+}

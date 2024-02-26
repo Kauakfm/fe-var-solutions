@@ -1,0 +1,338 @@
+.centerflex{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.centerflex img{
+    width: 100%;
+}
+
+.body-pagamento-adote-um-aluno{
+    color: var(--primary-text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-pagamento-adote-um-aluno .breadcrumb{
+    margin-top: 16vh;
+    width: 100%;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    margin-left: -125%;
+    margin-bottom: 15%;
+}
+.body-pagamento-adote-um-aluno nav {
+    --bs-breadcrumb-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E");
+}
+.cadeado{
+    font-size: 60px;
+    border: 2px solid var(--tertiary-color);
+    padding: 8px;
+    border-radius: 50%;
+    margin-bottom: 1%;
+}
+.body-pagamento-adote-um-aluno span{
+    margin: 2% 0 0.5% 0;
+    font-size: 13px;
+}
+.body-pagamento-adote-um-aluno h3{
+    font-weight: 700;
+}
+.body-pagamento-adote-um-aluno .credito-formulario h3 {
+    margin-bottom: 3%;
+}
+.body-pagamento-adote-um-aluno .p1{
+    width: 40%;
+    text-align: center;
+}
+.body-pagamento-adote-um-aluno .container-opcao{
+    width: 45%;
+    border: 2px solid var(--tertiary-color);
+    margin-bottom: 1%;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5% 2%;
+    transition: 0.2s ease-in;
+}
+.body-pagamento-adote-um-aluno .container-opcao:hover{
+    background-color: var(--header-secundary-color);
+}
+.body-pagamento-adote-um-aluno .container-opcao svg{
+    font-size: 22px;
+}
+.body-pagamento-adote-um-aluno .container-opcao div{
+    display: flex;
+    align-items: center;
+}
+.body-pagamento-adote-um-aluno .container-opcao div span{
+    white-space: nowrap;
+    margin-left: 3%;
+}
+.body-pagamento-adote-um-aluno .container-opcao div .pix{
+    width: 4vh;
+    margin-left: 4%;
+}
+.body-pagamento-adote-um-aluno .container-opcao div .boleto{
+    width: 5vh;
+    margin-left: 3%;
+}
+.body-pagamento-adote-um-aluno .container-opcao div .credito{
+    margin-left: 3%;
+    display: flex;
+    gap: 4%;
+}
+.body-pagamento-adote-um-aluno .container-opcao div p{
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+
+
+
+
+.body-pagamento-adote-um-aluno .accordion .accordion-item #collapseThree .accordion-body{
+    padding: 5% 4% 6% 4% !important;
+    box-shadow: 1px 2px 5px var(--tertiary-color);
+}
+
+.body-pagamento-adote-um-aluno .accordion .accordion-item #collapseThree .accordion-body
+.credito-formulario button{
+    margin-top: 2%;
+}
+
+.body-pagamento-adote-um-aluno .accordion {
+    width: 45%;
+    margin-bottom: 1%;
+    overflow-y: hidden !important;
+}
+
+.body-pagamento-adote-um-aluno .accordion-header .accordion-button {
+    background-color: var(--secondary-color) !important;
+    border: 2px solid var(--tertiary-color) !important;
+    border-radius: 6px;
+    padding-left: 2vw;
+    transition: 0.2s ease-in;
+}
+
+.accordion-button p {
+    padding-left: 0 !important;
+}
+
+
+.body-pagamento-adote-um-aluno .accordion-header .accordion-button:hover {
+    background-color: var(--header-secundary-color) !important;
+}
+
+.body-pagamento-adote-um-aluno .accordion-header {
+    background-color: var(--secondary-color) !important;
+}
+
+.body-pagamento-adote-um-aluno .accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-right-radius: 6px !important;
+    border-bottom-left-radius: 6px !important; 
+}
+
+.body-pagamento-adote-um-aluno .accordion-header div {
+    display: flex;
+    align-items: center;
+    padding: 0.7% 0%;
+}
+
+.body-pagamento-adote-um-aluno .accordion-header div p {
+    margin-bottom: 0;
+    padding: 5% 0 5% 10%;
+}
+
+.body-pagamento-adote-um-aluno .accordion-header div .pix {
+    width: 22%;
+    margin-left: 8%;
+}
+
+.body-pagamento-adote-um-aluno .accordion-body {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 6% 4% !important;
+    cursor: auto;
+}
+
+.body-pagamento-adote-um-aluno .accordion-body img {
+    width: 210px;
+    /* height: auto; */
+    margin-right: 5%;
+    border-radius: 8px;
+}
+
+.body-pagamento-adote-um-aluno .accordion-body div p {
+    width: 100%;
+    margin-bottom: 2vh;
+    font-size: 15.3px;
+}
+
+.body-pagamento-adote-um-aluno .accordion-body div p span {
+    font-size: 15.3px;
+    font-weight: 600;
+}
+
+.body-pagamento-adote-um-aluno .accordion-body div p a {
+    text-decoration: underline;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.body-pagamento-adote-um-aluno .accordion-button:not(.collapsed)::after {
+    background-image: url("../../imagens/icon/top.png") !important;
+    margin-right: 1vw !important;
+}
+
+.accordion-button::after {
+    background-image: url("../../imagens/icon/top.png") !important;
+    margin-right: 1vw !important;
+}
+
+.body-pagamento-adote-um-aluno .cartoes-credito {
+    display: flex;
+    gap: 0.6vw;
+    justify-content: start;
+    margin-left: 2%;
+}
+
+.body-pagamento-adote-um-aluno .cartoes-credito img {
+    width: 5vh !important;
+}
+
+
+
+.credito-formulario{
+    margin: 0;
+    width: 100%;
+}
+.credito-formulario span{
+    font-size: 13px;
+}
+.credito-formulario .cartoes-credito{
+    display: flex;
+    gap: 2%;
+}
+.credito-formulario .formulario-pagamento{
+    margin: 0 0 0 0;
+}
+.credito-formulario .formulario-pagamento div{
+    display: flex;
+    flex-direction: column;
+}
+.credito-formulario .formulario-pagamento div input, div select{
+    margin-bottom: 1.7vh;
+    background-color: transparent;
+    border: 1px solid var(--tertiary-color);
+    color: var(--primary-text-color);
+    outline: none;
+    padding: 1.5vh 1vw;
+    border-radius: 5px;
+}
+.credito-formulario .formulario-pagamento div input::placeholder{
+    color: var(--border-gray-color);
+}
+.formulario-pagamento div select option{
+    color: var(--primary-text-color);
+}
+.formulario-pagamento div select option:hover{
+    color: var(--tertiary-color);
+}
+.row>* {
+    padding-left: 0;
+}
+.credito-formulario .formulario-pagamento button{
+    background-color: var(--primary-color-3);
+    color: var(--primary-text-color);
+    border: none;
+    padding: 1vh 7px;
+    width: 100%;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 1px 1px 6px var(--tertiary-color);
+    transition: 0.3s ease-in-out;
+}
+.credito-formulario .formulario-pagamento button:hover{
+    background-color: var(--primary-color);
+}
+.summary{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 4vh 0;
+}
+.summary p{
+    margin-bottom: 0 !important;
+}
+.total-diviser{
+    border-bottom: 1px solid var(--tertiary-color);
+    width: 60% !important;
+    padding: 1% 0 !important;
+    margin-bottom: 2vh !important;
+}
+.total-di{
+    padding: 3% 0 0 0 ;
+}
+
+
+
+
+
+
+
+/* celular e tablet */
+@media screen and (max-width: 1080px) {
+    .body-pagamento-adote-um-aluno .breadcrumb{
+        margin-top: 14vh;
+        margin-left: -48%;
+        margin-bottom: 20%;
+    }
+    .body-pagamento-adote-um-aluno .cadeado{
+        margin-bottom: 5%;
+    }
+    .body-pagamento-adote-um-aluno h3 {
+        text-align: center;
+        width: 90%;
+    }
+    .body-pagamento-adote-um-aluno .p1 {
+        width: 80%;
+    }
+    .body-pagamento-adote-um-aluno .accordion {
+        width: 90%;
+        margin-bottom: 4%;
+    }
+    .body-pagamento-adote-um-aluno .container-opcao{
+        width: 90%;
+        padding: 4% 4%;
+    }
+    .body-pagamento-adote-um-aluno .container-opcao div .boleto {
+        width: 4vh;
+    }
+    .body-pagamento-adote-um-aluno .cartoes-credito img {
+        width: 3.3vh !important;
+    }
+    .body-pagamento-adote-um-aluno span {
+        font-size: 11px;
+    }
+    .centerflex{
+        align-items: start;
+        margin-bottom: 7%;
+    }
+    .centerflex img{
+        width: 100%;
+    }
+    .summary {
+        padding: 3vh 0 4vh 0;
+    }
+    .body-pagamento-adote-um-aluno .credito-formulario h3 {
+        text-align: start;
+        width: 100%;
+    }
+}

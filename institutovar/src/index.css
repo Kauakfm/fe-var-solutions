@@ -1,0 +1,75 @@
+/* global */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* --- primary colors --- */
+  /* --- LIGHT MODE --- */
+  --primary-color: #7567a3;     
+  --secondary-color: #ffffff; 
+  --tertiary-color: #000000;
+
+  --primary-color-1: #C9C2D5;   /* light */
+  --primary-color-2: #9075b0;   /* moderate */
+  --primary-color-3: #695386;   /* dark */
+  --primary-color-4: #312a53;   /* dark dark */
+
+  --primary-text-color: #000000f7; 
+  --secondary-text-color: #ffffff;  
+  
+  --header-secundary-color: #fcfbfe;
+
+  /* --- primary colors --- */
+  /* --- DARK MODE --- */
+  /* --primary-color: #7d5e8c;
+  --secondary-color: #1a1a1a;
+  --tertiary-color: #ffffff;
+
+  --primary-color-1: #b19fbf;
+  --primary-color-2: #8a6b97;
+  --primary-color-3: #63476f;
+  --primary-color-4: #463455;
+
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #000000f7;
+
+  --header-secundary-color: #1a1a1a; */
+
+  /* --- outras cores --- */
+  --light-orange-color: #eec170;
+  --dark-orange-color: #fca72fe1;
+  --green-color: #006400;
+  --2-green-color: #007200;
+  --light-blue-color: #05d9cf;
+  --2-light-blue-color: #02fbee;
+  --dark-blue-color: #03045e;
+  --2-dark-blue-color: #010497b4;
+  --dark-red-color: #b11b2a;
+  --2-dark-red-color: #c71d2e;
+  --border-gray-color: #7a7a7a;
+
+  --h1-font-size: 1.6rem; /* 24px titulos grandes*/
+  --h2-font-size: 1.5rem; /* 23px titulos*/
+  --h3-font-size: 1.1rem; /* 18px texto destaque*/
+  --p-font-size: 1rem; /* 16px textos geral*/
+  --h6-font-size: .8rem; /* 14px textos pequenos*/
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+  background-color: var(--secondary-color);
+  border: none;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--border-gray-color);
+  border-radius: 50px;
+  height: 10vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

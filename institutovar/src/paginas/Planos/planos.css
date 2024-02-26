@@ -1,0 +1,134 @@
+.body-planos{
+    background-color: var(--secondary-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 9% 15% 8% 15%;
+    width: 100%;
+    color: var(--primary-text-color);
+}
+
+
+.body-planos h1{
+    text-align: center;
+    font-size: 33px;
+    font-weight: 700;
+    margin-bottom: 2%;
+}
+.body-planos h2{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 8%;
+}
+.body-planos section{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.plano{
+    width: 45%;
+    background-color: var(--tertiary-color);
+    transition: 0.3s ease-in-out;
+    border-radius: 9px; 
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 7px var(--tertiary-color);
+    padding-bottom: 3%;
+    color: var(--secondary-text-color);
+}
+.plano:hover{
+    transform: scale(1.05);
+}
+.plano h3{
+    text-align: center;
+    padding: 5% 2.5%;
+    border-bottom: 1px solid var(--secondary-color);
+    font-weight: 600;
+    font-size: 22px;
+}
+.icon-plano{
+    display: flex;
+    justify-content: center;
+    margin: 4% 0;
+    color: var(--primary-color-4);
+}
+.icon-plano svg{
+    font-size: 55px;
+}
+.plano h4, .plano h6{
+    text-align: center;
+    font-size: 12px;
+    margin: 2% 0 0 0;
+}
+.plano h4{
+    height: 70px;
+}
+.plano h4 span{
+    font-size: 35px;
+    font-weight: 700;
+}
+.plano button{
+    background-color: var(--primary-color-3);
+    color: var(--secondary-text-color);
+    border: none;
+    padding: 6px 7px;
+    border-radius: 4px;
+    width: 60%;
+    margin: 5% 0 10% 20%;
+    box-shadow: 1px 1px 6px var(--tertiary-color);
+    transition: 0.4s ease-in-out;
+    white-space: nowrap;
+}
+.plano button:hover{
+    background-color: var(--primary-color);
+}
+.plano p{
+    padding: 0 7%;
+    margin-bottom: 4%;
+}
+.plano p svg{
+    font-size: 23px;
+    margin-right: 1%;
+    color: var(--primary-color-3);
+}
+
+
+
+
+
+
+/* celular e tablet */
+@media screen and (max-width: 1080px) {
+    .body-planos{
+        padding: 30% 7% 15% 7%;
+    }
+    .body-planos h1{
+        font-size: 30px;
+        margin-bottom: 5%;
+    }
+    .body-planos h2{
+        font-size: 20px;
+        margin-bottom: 14%;
+    }
+    .body-planos section{
+        flex-direction: column;
+        gap: 3vh;
+    }
+    .plano{
+        width: 100%;
+        padding-bottom: 4%;
+    }
+    .icon-plano svg{
+        font-size: 60px;
+    }
+    .plano button{
+        box-shadow: 1px 1px 8px var(--tertiary-color);
+    }
+    .plano p{
+        margin-bottom: 5%;
+    }
+    .plano p svg{
+        font-size: 25px;
+    }
+}

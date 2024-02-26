@@ -1,0 +1,304 @@
+.body-inicio{
+    background-image: url("../../imagens/var/fundo-login.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--secondary-text-color);
+}
+
+
+.body-inicio section{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 12vh;
+}
+.logo-var{
+    width: 100%;
+}
+.body-inicio section a{
+    display: flex;
+    align-items: center;
+}
+.body-inicio section a svg{
+    font-size: 20px;
+    margin-right: 0.6vw;
+}
+.body-inicio section a:hover{
+    text-decoration: underline;
+}
+
+
+.container-login{
+    background: linear-gradient(140deg, var(--primary-color) 2%, var(--primary-color-4) 83%);
+    border-radius: 13px;
+    padding: 20px;
+    width: 39vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 3%;
+    box-sizing: content-box;
+}
+.container-login div label{
+    font-size: 15px;
+}
+.container-login p{
+    margin-bottom: 5%;
+    
+}
+.logo-var-circulo{
+    width: 18%;
+    margin-bottom: 20px;
+}
+.botoes-login{
+    display: flex;
+    justify-content: space-around;
+}
+.botao-azul{
+    background-color: var(--primary-color-3);
+    color: var(--secondary-text-color);
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 6px 7px;
+    width: 42%;
+    margin-right: 2%;
+    height: 20%;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 13px;
+    box-shadow: 1px 1px 6px var(--tertiary-color);
+    transition: 0.4s ease-in-out;
+}
+.botao-azul a{
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+.botao-azul:hover{
+    background-color: var(--primary-color);
+}
+.container-input{
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    height: 37px;
+    width: 100%;
+    margin-right: 80px;
+    margin-bottom: 5%;
+    padding: 2px;
+    box-sizing: content-box;
+}
+.container-input svg{
+    font-size: 22px;
+    color: var(--tertiary-color);
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.container-input input{
+    background: transparent;
+    color: var(--primary-text-color);
+    width: 85%;
+    border: 0;
+    margin-left: 8px;
+    outline: 0;
+    padding-top: 2px;
+    font-size: 13px !important;
+    font-weight: 500;
+}
+
+.container-login div span{
+    font-size: 0.8rem;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 1%;
+}
+
+
+.componente-redefinir-senha .p-redefinir{
+    text-align: center;
+}
+
+
+.modal-redefinir-senha .modal-content{
+    border-radius: 30px;
+}
+
+.modal-redefinir-senha .modal-body{
+    background-color: var(--secondary-color);
+    color: var(--primary-text-color);
+    border-radius: 8px;
+    padding: 12% 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-redefinir-senha .modal-body h6{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.modal-redefinir-senha .modal-body p{
+    padding-top: 5%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+
+
+
+.body-redefinir-senha{
+    background-color: var(--secondary-color);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--secondary-text-color);
+}
+.box-redefinir-senha{
+    background-color: var(--primary-color-2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 28vw;
+    height: 60vh;
+    padding: 0 2%;
+    border: 1px solid var(--border-gray-color);
+    border-radius: 7px;
+}
+.box-redefinir-senha img{
+    width: 20%;
+    margin-bottom: 4%;
+    margin-top: 10%;
+}
+.body-redefinir-senha section{
+    width: 90%;
+}
+.body-redefinir-senha h1{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 6%;
+}
+.body-redefinir-senha button{
+    background-color: var(--green-color);
+    color: var(--secondary-text-color);
+    border: none;
+    padding: 1.7% 10%;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 1px 1px 8px var(--tertiary-color);
+    transition: 0.4s ease-in-out;
+}
+.body-redefinir-senha .container-input{
+    width: 100%;
+    margin: 0 0 10% 0; 
+}
+
+
+
+@media screen and (max-width: 360px){
+    .botao-azul{
+        padding: 6px 3px;
+        width: 48%;
+        margin-right: 0;
+        font-size: 11px;
+    }
+}
+
+
+/* celular */
+@media screen and (max-width: 700px){
+    .body-inicio section{
+        width: 45%;
+    }
+    .logo-var{
+        margin-top: -40%;
+        margin-bottom: 30%;
+    }
+    .body-inicio section a{
+        display: none;
+    }
+    .logo-var-circulo{
+        width: 50px;
+    }
+    .body-inicio{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-login{
+        border-radius: 10px;
+        padding: 15px;
+        width: 70vw;
+        margin-right: 0;
+    }
+    .modal-redefinir-senha .modal-content{
+        background-color: transparent;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .modal-redefinir-senha .modal-body{
+        padding: 12% 15%;
+    }
+    .modal-redefinir-senha .modal-body h6{
+        text-align: center;
+    }
+    .box-redefinir-senha{
+        width: 85vw;
+        height: 54vh;
+    }
+}
+
+
+
+
+
+/* tablet */
+@media screen and (min-width: 701px) and (max-width: 1080px){
+    .body-inicio section{
+        width: 45%;
+    }
+    .logo-var{
+        margin-top: -40%;
+        margin-bottom: 30%;
+    }
+    .body-inicio section a{
+        display: none;
+    }
+    .body-inicio{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-login{
+        width: 50vw;
+        margin-right: 0;
+        padding: 25px 0;
+    }
+    .logo-var-circulo{
+        width: 49px;
+    }
+    .componente-redefinir-senha .p-redefinir{
+        width: 80%;
+    }
+    .modal-redefinir-senha .modal-content{
+        background-color: transparent;
+    }
+    .modal-redefinir-senha .modal-body h6{
+        font-size: 1.2rem;
+    }
+    .box-redefinir-senha{
+        width: 50vw;
+        height: 46vh;
+    }
+}

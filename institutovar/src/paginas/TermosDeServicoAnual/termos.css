@@ -1,0 +1,22 @@
+.body-termos{
+    height: 100%;
+    width: 100%;
+    color: var(--primary-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 25%;
+    background-color: var(--secondary-color);
+}
+.body-termos h1{
+    font-size: 32px;
+    font-weight: 700;
+}
+.body-termos h2{
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 2%;
+}
+.body-termos p{
+    text-align: justify;
+}

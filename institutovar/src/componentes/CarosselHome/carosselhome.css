@@ -1,0 +1,63 @@
+.body-home-aluno .carousel-control-prev, .body-home-aluno .carousel-control-next {
+  display: none !important;
+}
+.carousel-control-prev-icon {
+  position: absolute;
+  left: -40px;
+}
+.carousel-control-next-icon {
+  position: absolute;
+  right: -40px;
+}
+
+.carousel-inner{
+  width: 80% !important;
+  margin-left: 10%;
+}
+
+.carousel-inner div img{
+  height: auto;
+}
+
+.fade-carousel .carousel-item {
+  transition-property: opacity;
+  opacity: 0;
+}
+.fade-carousel .carousel-item.active {
+  transition-property: opacity;
+  opacity: 1;
+}
+.fade-carousel .carousel-item {
+  transition-property: opacity;
+  opacity: 0;
+  transition-duration: 1s; /* duração da transição de fade */
+}
+.fade-carousel .carousel-item.active {
+  transition-property: opacity;
+  opacity: 1;
+  transition-duration: 1s; /* duração da transição de fade */
+}
+
+
+
+
+
+/* celular */
+@media screen and (max-width: 767px){
+  .carossel-home-aluno{
+    width: 90% !important;
+    margin-left: 5%;
+  }
+  .carossel-home-aluno div img{
+    border-radius: 6px;
+  }
+}
+
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1080px){
+  .carossel-home-aluno{
+    width: 85% !important;
+    margin-left: 7.5%;
+  }
+}

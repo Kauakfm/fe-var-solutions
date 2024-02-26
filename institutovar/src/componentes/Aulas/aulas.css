@@ -1,0 +1,66 @@
+.accordion{
+    --bs-accordion-color: none !important;
+    --bs-accordion-border-color: none !important;
+    --bs-accordion-inner-border-radius: none !important;
+    --bs-accordion-btn-padding-x: 1rem !important;
+    --bs-accordion-active-color: none !important;
+    max-height: 53vh;
+    overflow-y: scroll;
+}
+.accordion::-webkit-scrollbar{
+    background-color: var(--secondary-color) !important;
+}
+.accordion-item{
+    max-width: 100%;
+    min-width: 99%;
+}
+.accordion-button{
+    color: var(--primary-text-color) !important;
+    border-bottom: 1px solid var(--primary-text-color) !important;
+    background-color: var(--secondary-color) !important;
+    font-weight: 500;
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: var(--bs-accordion-btn-icon) !important;
+}
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+.accordion-body{
+    background-color: var(--secondary-color) !important;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.accordion-body-trilha{
+    padding: 10px 10px 10px 5px !important;
+}
+.accordion-body:hover{
+    background-color: var(--header-secundary-color) !important;
+}
+.accordion-body p{
+    margin: 0 !important;
+    margin-right: 0 !important;
+    font-weight: 400;
+    width: 80%;
+}
+.accordion-body span{
+    font-size: 11px;
+    font-weight: 400;
+}
+.accordion-body svg{
+    font-size: 35px;
+    width: 20%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+
+/* celular */
+@media screen and (max-width: 767px){
+    .accordion{
+        max-height: 43vh;
+    }
+}

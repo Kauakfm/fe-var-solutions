@@ -1,0 +1,352 @@
+.body-inscricao-presencial {
+    background-color: var(--secondary-color);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--primary-text-color);
+    padding: 9% 0 6% 0;
+}
+
+.body-inscricao-presencial .breadcrumb {
+    width: 90vw;
+    padding-left: 8%;
+    padding-bottom: 2%;
+    font-weight: 500;
+}
+
+.body-inscricao-presencial nav {
+    --bs-breadcrumb-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E");
+}
+
+.body-inscricao-presencial h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.body-inscricao-presencial .h2-1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.5%;
+    width: 60%;
+}
+
+.body-inscricao-presencial .h2-2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.5%;
+    width: 68%;
+    margin-top: 4%;
+}
+
+.body-inscricao-presencial h3 {
+    font-size: 1.2rem;
+}
+
+.container-mensalidade {
+    display: flex;
+    width: 85%;
+    justify-content: center;
+    margin: 4% 0 3% 14%;
+    gap: 4%;
+}
+
+.container-mensalidade div .presencial-input svg {
+    margin-right: 9px;
+}
+
+.container-mensalidade div {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-mensalidade .mensalidade {
+    width: 30%;
+}
+
+.container-mensalidade .mensalidade label svg {
+    margin-left: 2%;
+    margin-top: -7%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.container-mensalidade .mensalidade div {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    background-color: transparent;
+}
+
+.container-mensalidade .mensalidade div input {
+    background: transparent;
+    color: var(--primary-text-color);
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.mensalidade {
+    position: relative;
+}
+
+.mensalidade .table-container {
+    display: none;
+    position: absolute;
+    top: -155%;
+    right: -8%;
+    font-size: 12px;
+}
+
+/* .mensalidade .table-container table thead .titulos th {
+    background-color: var(--5-gray-color) !important;
+}
+
+.mensalidade .table-container table tbody tr td {
+    background-color: var(--4-gray-color) !important;
+} */
+
+.mensalidade:hover .table-container {
+    display: block;
+}
+
+
+.container-turmas {
+    width: 60%;
+}
+
+/* .table>:not(caption)>*>* {
+    background-color: var();
+} */
+/* 
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-bg-type: ;
+} */
+
+.radio-turmas {
+    margin-left: 47%;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+.container-dados {
+    width: 70%;
+}
+
+
+.presencial-input {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    background-color: transparent;
+    color: var(--primary-text-color);
+    border-radius: 6px;
+    height: 2.3rem;
+    width: 100%;
+    margin-bottom: 8%;
+    padding: 2px;
+    border: 1px solid var(--tertiary-color);
+}
+
+.presencial-input svg {
+    width: 10%;
+    height: 58%;
+    color: var(--tertiary-color);
+    margin-left: 6px;
+    margin-right: 8px;
+}
+
+.presencial-input input {
+    background: transparent;
+    color: var(--primary-text-color);    
+    width: 90%;
+    border: 0;
+    outline: 0;
+    padding-top: 3px;
+    font-size: 14px;
+}
+
+.presencial-input select {
+    background: transparent;
+    color: var(--primary-text-color);
+    width: 90%;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    margin: 0;
+}
+
+.body-inscricao-presencial .porque {
+    height: 18vh;
+    outline: none;
+    padding: 1%;
+}
+
+.porque-div {
+    width: 101%;
+    margin-left: -1.2%;
+}
+
+.presencial-botao {
+    width: 70%;
+    display: flex;
+    justify-content: end;
+    margin-top: -1%;
+}
+
+.botao-inscricao {
+    background-color: var(--primary-color-3);
+    color: var(--primary-text-color);
+    border: none;
+    padding: 0.6% 7px;
+    width: 11%;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 1px 1px 7px var(--tertiary-color);
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+.botao-inscricao:hover {
+    background-color: var(--primary-color);
+}
+
+
+
+
+
+
+/* celular e tablet */
+@media screen and (max-width: 1080px) {
+    .body-inscricao-presencial {
+        padding: 30% 0 8% 15%;
+        width: 85% !important;
+    }
+
+    .body-inscricao-presencial h1 {
+        font-size: 1.6rem;
+        white-space: nowrap;
+    }
+
+    .body-inscricao-presencial .h2-1 {
+        font-size: 1.2rem;
+        margin-bottom: 3%;
+        width: 120%;
+    }
+
+    .body-inscricao-presencial .h2-2 {
+        font-size: 1.2rem;
+        margin-bottom: 3%;
+        width: 110%;
+        margin-top: 5%;
+    }
+
+    .body-inscricao-presencial h3 {
+        font-size: 1.1rem;
+    }
+
+    .container-mensalidade {
+        flex-direction: column;
+        margin: 10% 0%;
+        gap: 4%;
+        width: 100%;
+    }
+
+    .container-mensalidade .mensalidade {
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .container-mensalidade .mensalidade label svg {
+        margin-left: 2%;
+        margin-top: -5%;
+    }
+
+    .container-turmas {
+        width: 80%;
+    }
+
+    .radio-turmas {
+        margin-left: 42%;
+        margin-top: 20%;
+    }
+
+    .container-dados {
+        width: 100%;
+    }
+
+    .presencial-input {
+        height: 2.5rem;
+    }
+
+    .botao-inscricao {
+        width: 32%;
+        border-radius: 5px;
+    }
+
+    .presencial-botao {
+        width: 100%;
+    }
+
+    .porque-div {
+        width: 104%;
+        margin-left: -4%;
+    }
+}
+
+
+
+
+
+
+.modal-parabens .botao-cadastro {
+    width: 100%;
+    height: 63%;
+    margin-right: 40px;
+    color: var(--primary-text-color);
+}
+
+.modal-parabens .modal-content {
+    border-radius: 30px;
+}
+
+.modal-parabens .modal-body {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 12% 7%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--primary-text-color) !important;
+}
+
+.modal-parabens .modal-body img {
+    width: 20%;
+    margin-bottom: 7%;
+}
+
+.modal-parabens .modal-body h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.modal-parabens .modal-body h6 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.modal-parabens .modal-body p {
+    padding-top: 5%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.modal-parabens .modal-body p a {
+    text-decoration: underline;
+    color: var(--primary-color);
+}

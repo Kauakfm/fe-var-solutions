@@ -1,0 +1,223 @@
+.body-aula{
+    background-color: var(--secondary-color);
+    height: 155vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-text-color);
+    padding: 7% 4% 2% 4%;
+}
+
+.ativo {
+    color: var(--primary-color);
+}  
+.breadcrumb .active{
+    color: var(--primary-color) !important;
+}
+
+.body-aula nav{
+    --bs-breadcrumb-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E");
+}
+.body-aula nav ol li a{
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+.body-aula nav ol li{
+    font-weight: 500;
+}
+
+
+.box-aulas{
+    height: 70vh;
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+}
+.box-aulas-video{
+    max-width: 70%;
+    min-width: 70%;
+    height: 70vh;
+}
+.box-aulas-video iframe{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.box-aulas-videos{
+    margin-left: 2%;
+    width: 25%;
+    height: 62vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--secondary-color) !important;
+    box-shadow: 1px 2px 5px var(--tertiary-color);
+}
+.videos-nav{
+    display: flex; 
+    justify-content: flex-start;
+    background-color: var(--header-secundary-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px 5%;
+    gap: 9%;
+    border-bottom: 1px solid var(--tertiary-color);
+}
+.videos-nav p{
+    margin: 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+.videos-nav p svg{
+    margin-left: 0.2vw;
+    transition: 0.3s ease-in;
+    margin-top: -2px;
+}
+.videos-nav p svg:hover{
+    transform: scale(1.1);
+}
+.box-aulas-videos .botao-aula-concluida{
+    background-color: var(--primary-color-3);
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 3.5vh;
+    font-size: 14px;
+    padding: 2% 0;
+    box-shadow: 1px 1px 7px var(--tertiary-color);
+    transition: 0.4s ease-in-out;
+    font-weight: 600;
+}
+.box-aulas-videos .botao-aula-concluida:hover{
+    background-color: var(--primary-color);
+}
+
+
+.box-descricao{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+.box-descricao h1{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.box-descricao span{
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--tertiary-color);
+    width: 60%;
+    font-size: 1.6rem;
+}
+.box-descricao p{
+    margin-top: 30px;
+    max-width: 90%;
+}
+
+.fileAula{
+    margin-top: 2% !important;
+}
+.fileAula:hover{
+    text-decoration: underline;
+}
+
+.modal-certificado .modal-content{
+    background-color: transparent;
+}
+.modal-certificado .modal-body img{
+    width: 90px;
+}
+.modal-certificado .modal-body p{
+    font-size: 17px;
+    width: 100%;
+}
+.modal-certificado .modal-body button{
+    margin-top: 2vh;
+}
+
+
+/* celular */
+@media screen and (max-width: 767px){
+    .body-aula{
+        height: 100%;
+        padding: 28% 5% 10% 5%;
+    }
+    .box-aulas{
+        height: 100%;
+        flex-direction: column;
+    }
+    .box-aulas-video{
+        max-width: 100%;
+        min-width: 100%;
+        height: 23.3vh;
+        margin-bottom: 7%;
+    }
+    .box-aulas-videos{
+        margin-left: 0%;
+        width: 100%;
+        height: 50vh;
+    }
+    .box-aulas-videos .botao-aula-concluida{
+        border-radius: 5px;
+        margin-top: 9%;
+    }
+    .box-descricao{
+        margin-top: 30%;
+    }
+    .box-descricao h1{
+        font-size: 1.5rem;
+    }
+    .box-descricao span{
+        font-size: 1.5rem;
+    }
+    .box-descricao p{
+        margin-top: 20px;
+        max-width: 90%;
+    }
+}
+
+
+
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1080px){
+    .body-aula{
+        height: 100%;
+        padding: 17% 5% 10% 5%;
+    }
+    .box-aulas{
+        height: 100%;
+        flex-direction: column;
+    }
+    .box-aulas-video{
+        max-width: 100%;
+        min-width: 100%;
+        height: 38vh;
+        margin-bottom: 7%;
+    }
+    .box-aulas-videos{
+        margin-left: 0%;
+        width: 100%;
+        height: 50vh;
+    }
+    .box-aulas-videos .botao-aula-concluida{
+        border-radius: 5px;
+        margin-top: 5%;
+    }
+    .box-descricao{
+        margin-top: 30%;
+    }
+    .box-descricao h1{
+        font-size: 1.5rem;
+    }
+    .box-descricao span{
+        font-size: 1.5rem;
+    }
+    .box-descricao p{
+        margin-top: 20px;
+        max-width: 90%;
+    }
+}

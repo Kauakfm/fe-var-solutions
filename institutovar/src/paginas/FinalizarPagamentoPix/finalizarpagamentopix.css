@@ -1,0 +1,106 @@
+.body-finalizar-pix{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-text-color);
+    flex-direction: column;
+    height: 100vh;
+}
+.body-finalizar-pix h4{
+    font-weight: 600;
+    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+.body-finalizar-pix h4 img{
+    width: 35px;
+    margin-left: 3%;
+}
+.body-finalizar-pix .div-code{
+    width: 35%;
+    background-color: var(--primary-color-3);
+    border: 1px solid;
+    border-color: var(--tertiary-color);
+    border-radius: 5px;
+    padding: 2%;
+}
+.body-finalizar-pix .div-code img{
+    width: 160px;
+    border-radius: 6px;
+    margin: 4% 0 6% 30%;
+}
+.body-finalizar-pix .div-code h6{
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.body-finalizar-pix .div-code div{
+    border: 1px solid;
+    border-color: var(--tertiary-color);
+    padding: 2% 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    margin: 4% 0;
+}
+.body-finalizar-pix .div-code div span{
+    font-weight: 600;
+    color: var(--border-gray-color);
+}
+.body-finalizar-pix .div-code div p{
+    cursor: pointer;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+.body-finalizar-pix .div-code section {
+    border-top: 1px solid;
+    border-color: var(--tertiary-color);
+    padding-top: 5%;
+    margin-top: 5%;
+}
+.body-finalizar-pix .div-code section p{
+    font-size: 15px;
+}
+.body-finalizar-pix .div-code section p a{
+    color: var(--primary-color-1);
+    text-decoration: underline;
+}
+
+
+
+/* celular e tablet */
+@media screen and (max-width: 1080px) {
+    .body-finalizar-pix{
+        padding: 30% 0 5% 0;
+    }
+    .body-finalizar-pix h4{
+        margin-bottom: 8%;
+        white-space: wrap;
+        display: block;
+        width: 80%;
+        text-align: center;
+    }
+    .body-finalizar-pix h4 img{
+        width: 30px;
+        margin-left: 2%;
+    }
+    .body-finalizar-pix .div-code{
+        width: 90%;
+        padding: 4%;
+    }
+    .body-finalizar-pix .div-code img{
+        margin: 4% 0 6% 25%;
+    }
+    .body-finalizar-pix .div-code div span{
+        font-size: 14px;
+    }
+    .body-finalizar-pix .div-code div button{
+        font-size: 14px;
+    }
+    .body-finalizar-pix .div-code section {
+        padding-top: 7%;
+        margin-top: 7%;
+    }
+}

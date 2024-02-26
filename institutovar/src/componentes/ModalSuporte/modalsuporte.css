@@ -1,0 +1,84 @@
+.modal-suporte .modal-content{
+    border-radius: 20px;
+    background-color: transparent;
+    border: none;
+    height: 75vh;
+}
+.modal-suporte .modal-header{
+    background-color: var(--secondary-color);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: var(--primary-text-color);
+    padding-right: 3%;
+    padding-left: 3%;
+}
+.modal-suporte .modal-header svg{
+    font-size: 30px;
+    margin-right: 1vw;
+}
+.modal-suporte .modal-body{
+    background-color: var(--secondary-color);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-text-color) !important;
+    padding: 4% 5% 7% 5%;
+}
+
+.modal-suporte .modal-body h2{
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+}
+.modal-suporte .modal-body a{
+    text-align: center;
+}
+.modal-suporte .modal-body p{
+    margin-bottom: 0;
+    text-align: center;
+}
+.modal-suporte .modal-body p span{
+    text-decoration: underline;
+}
+.modal-suporte .modal-body div{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 1% 0 5% 0;
+}
+.modal-suporte .modal-body iframe{
+    height: 281px;
+    width: 500px;
+    border-radius: 6px;
+}
+.modal-suporte .botao-suporte{
+    margin: 4% 0;
+    padding: 8px 6%;
+    background-color: var(--primary-color-3);
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    box-shadow: 1px 1px 7px var(--tertiary-color);
+    transition: 0.6s ease-in-out;
+}
+.modal-suporte .botao-suporte:hover{
+    background-color: var(--primary-color);
+}
+
+
+
+/* celular e tablet */
+@media screen and (max-width: 1080px){
+    .modal-suporte .modal-content{
+        height: 65vh;
+    }
+    .modal-suporte .modal-body{
+        padding: 8% 5%;
+    }
+    .modal-suporte .modal-body iframe{
+        height: 165px;
+        width: 300px;
+    }
+}
